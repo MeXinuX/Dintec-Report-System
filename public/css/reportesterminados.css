@@ -1,0 +1,72 @@
+/* Reset básico para el margen y el padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333; /* Color de texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para el encabezado */
+h1 {
+    text-align: center; /* Centrar el encabezado */
+    margin-bottom: 20px; /* Espacio debajo del encabezado */
+}
+
+/* Estilo para la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Espacio arriba de la tabla */
+}
+
+/* Estilo para las celdas de la tabla */
+th, td {
+    padding: 12px; /* Espaciado interno en celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+    border: 1px solid #ddd; /* Bordes de celdas */
+}
+
+/* Estilo para las cabeceras de la tabla */
+th {
+    background-color: #4CAF50; /* Color de fondo de la cabecera */
+    color: white; /* Color del texto de la cabecera */
+}
+
+/* Estilo para las filas de la tabla al pasar el mouse */
+tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para la tabla en dispositivos móviles */
+@media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block; /* Hacer que la tabla se muestre como bloques */
+    }
+
+    th {
+        display: none; /* Ocultar cabeceras en dispositivos pequeños */
+    }
+
+    td {
+        text-align: right; /* Alinear texto a la derecha */
+        position: relative; /* Posición relativa para crear un diseño en bloque */
+        padding-left: 50%; /* Espacio a la izquierda */
+    }
+
+    td::before { /* Añadir contenido antes del texto */
+        content: attr(data-label); /* Usar el atributo 'data-label' */
+        position: absolute; /* Posición absoluta */
+        left: 10px; /* Espacio a la izquierda */
+        width: 45%; /* Ancho */
+        padding-right: 10px; /* Espaciado a la derecha */
+        white-space: nowrap; /* No envolver texto */
+        text-align: left; /* Alinear texto a la izquierda */
+    }
+}

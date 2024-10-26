@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar o Eliminar Reportes</title>
+    <link rel="stylesheet" href="css/modificareliminar.css">
+    <script src="js/modificareliminar.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Modificar o Eliminar Reportes</h2>
+        
+        <table id="reportesTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cliente</th>
+                    <th>Motivo</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Ejemplo de datos de reporte; en un entorno real, estos se generarían dinámicamente -->
+                <tr data-reporte-id="1">
+                    <td>1</td>
+                    <td>Cliente A</td>
+                    <td>Instalación de Software</td>
+                    <td>2024-10-26</td>
+                    <td>
+                        <button class="modificar-btn" onclick="redireccionarModificar(1)">Modificar</button>
+                        <button class="eliminar-btn" onclick="eliminarReporte(1)">Eliminar</button>
+                    </td>
+                </tr>
+                <!-- Más filas de reportes -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/asignartarea.css">
+    <title>Asignar Tarea</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Asignar Tarea</h1>
+        <div class="report-list">
+            <!-- Lista de reportes pendientes -->
+            <div class="report-item" id="report1">
+                <p><strong>Reporte #1:</strong> Empresa A - Problema de conexión</p>
+                <label for="tecnico1">Asignar a:</label>
+                <select id="tecnico1" class="tecnico-select">
+                    <option value="">Selecciona un técnico</option>
+                    <!-- Opciones de técnicos se llenarán automáticamente -->
+                </select>
+                <button onclick="asignarTarea('report1', 'tecnico1')">Asignar</button>
+            </div>
+
+            <div class="report-item" id="report2">
+                <p><strong>Reporte #2:</strong> Empresa B - Error en el sistema</p>
+                <label for="tecnico2">Asignar a:</label>
+                <select id="tecnico2" class="tecnico-select">
+                    <option value="">Selecciona un técnico</option>
+                </select>
+                <button onclick="asignarTarea('report2', 'tecnico2')">Asignar</button>
+            </div>
+
+            <!-- Puedes agregar más reportes aquí -->
+        </div>
+    </div>
+    <script src="js/asignartarea.js"></script>
+</body>
+</html>

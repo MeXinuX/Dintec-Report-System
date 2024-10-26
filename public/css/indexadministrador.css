@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para apilar los botones */
+    align-items: center; /* Centrar los botones */
+    margin-top: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px 0; /* Espaciado vertical entre los botones */
+    transition: background-color 0.3s;
+    width: 100%; /* Asegurar que los botones ocupen todo el ancho */
+    max-width: 300px; /* Ancho máximo para que no sean demasiado grandes */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .button {
+        font-size: 16px; /* Ajustar tamaño de fuente en móviles */
+    }
+
+    h1 {
+        font-size: 24px; /* Ajustar tamaño de título en móviles */
+    }
+}
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar Tarea</title>
+    <link rel="stylesheet" href="css/modificartarea.css">
+    <script src="js/modificartarea.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Modificar Tarea</h2>
+        
+        <form id="modificarTareaForm">
+            <!-- Selector para elegir el cliente -->
+            <label for="cliente">Cliente:</label>
+            <select id="cliente" name="cliente">
+                <option value="">Seleccione un cliente</option>
+                <!-- Opciones de clientes que se llenarán dinámicamente -->
+            </select>
+
+            <!-- Datos del cliente -->
+            <label for="nombreCliente">Nombre del Cliente:</label>
+            <input type="text" id="nombreCliente" name="nombreCliente" required>
+
+            <label for="direccionCliente">Dirección:</label>
+            <input type="text" id="direccionCliente" name="direccionCliente" required>
+
+            <label for="telefonoCliente">Teléfono:</label>
+            <input type="text" id="telefonoCliente" name="telefonoCliente" required>
+
+            <label for="correoCliente">Correo:</label>
+            <input type="email" id="correoCliente" name="correoCliente" required>
+
+            <!-- Detalles de la tarea -->
+            <label for="personaRecibe">Persona que Recibe:</label>
+            <input type="text" id="personaRecibe" name="personaRecibe" required>
+
+            <label for="personaSolicita">Persona que Solicita:</label>
+            <input type="text" id="personaSolicita" name="personaSolicita" required>
+
+            <label for="horaAtencion">Hora de Atención:</label>
+            <input type="time" id="horaAtencion" name="horaAtencion" required>
+
+            <label for="motivoServicio">Motivo del Servicio:</label>
+            <textarea id="motivoServicio" name="motivoServicio" required></textarea>
+
+            <!-- Botón para guardar cambios -->
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </div>
+</body>
+</html>
